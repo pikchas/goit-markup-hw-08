@@ -1,0 +1,36 @@
+// UTILS
+@import './utils/variables';
+
+// BASE
+@import './base/common';
+
+// COMPONENTS
+@import './components/container';
+@import './components/section';
+@import './components/section-title';
+@import './components/logo';
+@import './components/button';
+@import './components/backdrop';
+@import './components/modal';
+@import './components/modal-form';
+@import './components/navigation-menu';
+@import './components/navigation-contacts';
+@import './components/team-cards';
+@import './components/socials';
+@import './components/footer-adress';
+@import './components/footer-tittle';
+@import './components/footer-socials';
+@import './components/subscribe';
+@import './components/projects-buttons';
+@import './components/projects-cards';
+
+
+// LAYOUT
+@import './layout/header';
+@import './layout/hero-section';
+@import './layout/feature-section';
+@import './layout/galary-section';
+@import './layout/team-section';
+@import './layout/clients-section';
+@import './layout/footer';
+@import './layout/projects-section';

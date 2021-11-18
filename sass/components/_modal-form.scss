@@ -1,0 +1,148 @@
+.modal__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.modal__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    color: var(--primary-text-color);
+    margin-top: 40px;
+}
+.form {
+    width: 448px;
+    margin-top: 12px;
+}
+.form__group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    & label {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: var(--second-text-color);
+    }
+
+    & input {    
+        margin: 0;
+        margin-top: 4px;
+        padding: 11px 12px 11px 42px;
+        outline: none;
+        height: 40px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        cursor: pointer;
+        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover input,
+    &:focus-within input {
+        border-color: var(--accent-color);
+    }
+
+    &:hover .form__icon,
+    &:focus-within .form__icon {
+        fill: var(--accent-color);
+    }
+
+    & textarea {
+        margin-top: 4px;
+        padding: 12px 16px;
+        height: 120px;
+        outline: none;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        cursor: pointer;
+        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover textarea,
+    &:focus-within textarea {
+        border-color: var(--accent-color);
+    
+    }
+
+    &:not(:first-child) {
+        margin-top: 10px;
+    }
+
+    &:last-child {
+        margin-top: 20px;
+    }
+
+    & label[for="police"] {
+        font-size: 14px;
+        line-height: 1.71;
+        color: var(--second-text-color);
+    }
+}
+
+.form__icon {
+    position: absolute;
+    bottom: 11px;
+    left: 12px;
+    width: 18px;
+    height: 18px;
+
+    fill: var(--dark);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+textarea {
+    resize: none;
+}
+
+.form__checkbox-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--second-text-color);
+}
+.form__checkbox-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    &:checked ~ .form__box-icon-check {
+        background-color: var(--accent-color);
+        border-color: var(--accent-color);
+    }
+}
+
+.form__box-icon-check {
+    display: flex;
+    align-items: center;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+    border: 1px solid #212121;
+    border-radius: 2px;
+    background-origin: border-box;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+    }
+}
+
+.form__checkbox-link {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--accent-color);
+}
+
+.btn--modal {  
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    margin-top: 30px;
+    padding: 10px 55px;
+    
+}
