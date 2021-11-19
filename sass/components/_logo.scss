@@ -4,7 +4,7 @@
     font-size: 26px;
     line-height: 1.19;
     
-    margin-right: 50px;
+    margin-right: 0;
 }
 .web {
     color: var(--accent-color);
@@ -15,6 +15,13 @@
 }
 .logo--light {
     display: flex;
+    justify-content: center;
     color: var(--light-text-color) ;
     margin-bottom: 20px;
+    margin-right: 0;
+
+    @media screen and (min-width: 768px) {
+        justify-content: start;
+        margin-right: 50px;
+    }
 }

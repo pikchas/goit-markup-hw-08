@@ -1,4 +1,6 @@
 .footer-contact__title {
+    display: flex;
+    justify-content: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -6,4 +8,8 @@
     text-transform: uppercase;
     color: var(--light-text-color);
     margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+        justify-content: start;
+    }
 }

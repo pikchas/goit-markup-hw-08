@@ -1,9 +1,20 @@
 .section-clients__list {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
+    flex-wrap: wrap;
+}
+.section-clients__item {
+    
+    &:not(:nth-child(2n)) {
+        margin-right: 30px;
+    }
+
+    &:not(:nth-child(n+5)) {
+        margin-bottom: 30px;
+    }
 }
 .section-clients__link {
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -24,6 +35,8 @@
     &:focus .section-clients__icon-company {
         fill: var(--accent-color);
     }
+
+    
 }
 
 .section-clients__icon-company {
