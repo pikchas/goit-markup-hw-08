@@ -42,12 +42,50 @@
                     </a>
                 </li>
             </ul>
-            <button class="mobile-menu">
-                <svg class="js-open-menu mobile-menu__burger">
+<!-- mobile menu -->
+            <button class="js-open-menu burger-btn" data-menu-open>
+                <svg class="burger-btn__icon">
                     <use href="./images/symbol-defs.svg#menu_burger"></use>
                 </svg>
             </button>
-            
+            <div class="js-menu-container mobile-menu" data-menu>
+                <button class="js-close-menu close-btn" data-menu-close>
+                    <svg class="close-btn__icon">
+                        <use href="./images/symbol-defs.svg#close-icon"></use>
+                    </svg>
+                </button>
+                <div class="mobile-nav">
+                    <ul class="list mobile-nav__list">
+                        <li class="mobile-nav__item"><a class="mobile-nav__link mobile-nav__link--current link"
+                                href="./index.html">Студия</a></li>
+                        <li class="mobile-nav__item"><a class="mobile-nav__link link"
+                                href="./portfolio.html">Портфолио</a></li>
+                        <li class="mobile-nav__item"><a class="mobile-nav__link link" href="">Контакты</a></li>
+                    </ul>                    
+                </div>
+                <div>
+                    <ul class="list mobile-contacts">
+                        <li class="mobile-contacts__item">
+                            <a class="mobile-contacts__telephone link" href="tel:+380961111111">
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                        <li class="mobile-contacts__item">
+                            <a class="mobile-contacts__mail link" href="mailto:info@devstudio.com">                    
+                                info@devstudio.com
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    <ul class="list mobile-social__list">
+                        <li class="mobile-social__item"><a href="" class="mobile-social__link link">Instagram</a></li>
+                        <li class="mobile-social__item"><a href="" class="mobile-social__link link">Twitter</a></li>
+                        <li class="mobile-social__item"><a href="" class="mobile-social__link link">Facebook</a></li>
+                        <li class="mobile-social__item"><a href="" class="mobile-social__link link">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+<!-- end mobile menu -->
         </div>
     </header>
 <!-- Контент -->
@@ -449,5 +487,6 @@
 </div>
 
 <script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>

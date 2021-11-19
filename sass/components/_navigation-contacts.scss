@@ -2,11 +2,24 @@
     display: none;
     margin-left: auto;
     align-items: center;
+
+    @media screen and (min-width: 768px) {
+    display: block;
+    }
+
+    @media screen and (min-width: 1200px) {
+    display: flex;
+    }
 }
 
 
 .nav-contacts__item:not(:last-child) {
-    margin-right: 50px;
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 50px;
+        margin-bottom: 0;
+    }
 }
 .nav-contacts__link {
     display: flex;
@@ -46,7 +59,11 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
-        
+    
+    @media screen and (min-width: 1200px) {
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
 }
 
 .nav-contacts__link--icon-smartphone {
