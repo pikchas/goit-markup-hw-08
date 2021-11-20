@@ -1,61 +1,66 @@
 .header-nav__list {
-    display: none;
-    align-items: center;
-    justify-content: flex-end;
+  display: none;
+  align-items: center;
+  justify-content: flex-end;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
-// .header-nav__item:not(:last-child) {
-//     margin-right: 50px;
-// }
+.header-nav__item:not(:last-child) {
+    margin-right: 50px;
+}
 
-// .header-nav__link {
-//     position: relative;
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     letter-spacing: 0.02em;
-//     color: var(--primary-text-color);
+.header-nav__link {
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
 
-//     &:hover::after {
-//         width: 100%
-//     }
-//     &:hover, 
-//     &:focus {
-//         color: var(--accent-color);
-//     }
-// }
-// .header-nav__link--hero {
-//     position: relative;
+    &:hover::after {
+        width: 100%
+    }
+    &:hover, 
+    &:focus {
+        color: var(--accent-color);
+    }
+}
 
-//     &::after {
-//         display: block;
-//         position: absolute;
-//         content: "";
-//         left: 0;
-//         top: 44px;
-//         width: 0;
-//         height: 4px;
-//         background-color: var(--accent-color);
-//         border-radius: 2px;
-//         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//     }
-// }
+.header-nav__link--hero {
+    position: relative;
+
+    &::after {
+        display: block;
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 44px;
+        width: 0;
+        height: 4px;
+        background-color: var(--accent-color);
+        border-radius: 2px;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
 
 
-// .header-nav__link--current {
-//     position: relative;
+.header-nav__link--current {
+    position: relative;
 
-//     &::after {
-//         display: block;
-//         position: absolute;
-//         content: "";
-//         left: 0;
-//         top: 44px;
-//         width: 100%;
-//         height: 4px;
-//         background-color: var(--accent-color);
-//         border-radius: 2px;
-//     }
-// }
+    &::after {
+        display: block;
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 44px;
+        width: 100%;
+        height: 4px;
+        background-color: var(--accent-color);
+        border-radius: 2px;
+    }
+}
 
 // .header-nav__list.header-nav__item:not(:last-child) {
 //     margin-right: 50px;
