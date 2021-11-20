@@ -1,11 +1,14 @@
 .projects-galary__list {
-    display: flex;
-    flex-wrap: wrap;
+      
     
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .projects-galary__box {
-    width: 370px;
+    // width: 370px;
     padding-bottom: 20px;
     background-color: var(--light-text-color);
     border: 1px solid #EEEEEE;
@@ -17,13 +20,28 @@
                     0px 4px 4px rgba(0, 0, 0, 0.06),
                     1px 4px 6px rgba(0, 0, 0, 0.16);
     }
-    
-    &:not(:nth-child(3n + 3)) {
-        margin-right: 30px;
+
+    &:not(:nth-child(n+9)) {
+        margin-bottom: 30px;
     }
 
-    &:not(:nth-child(n+7)) {
-        margin-bottom: 30px;
+    @media screen and (min-width:480px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width:768px) {
+        
+    }
+
+    @media screen and (min-width: 1200px) {
+
+        &:not(:nth-child(3n + 3)) {
+            margin-right: 30px;
+        }
+
+        &:not(:nth-child(n+7)) {
+            margin-bottom: 30px;
+        }
     }
 }
 

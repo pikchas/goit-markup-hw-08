@@ -5,15 +5,27 @@
 }
 .section-clients__item {
     
+
     &:not(:nth-child(2n)) {
         margin-right: 30px;
     }
 
-    &:not(:nth-child(n+5)) {
+    &:not(:nth-child(n+6)) {
         margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 480px) {
+        &:not(:nth-child(2n)) {
+            margin-right: 30px;
+        }
+
+        &:not(:nth-child(n+5)) {
+            margin-bottom: 30px;
+        }
     }
 }
 .section-clients__link {
+    
     width: 210px;
     height: 92px;
     border: 1px solid #AFB1B8;
@@ -36,7 +48,9 @@
         fill: var(--accent-color);
     }
 
-    
+    @media screen and (min-width: 480px) {
+        width: 210px;
+    }
 }
 
 .section-clients__icon-company {

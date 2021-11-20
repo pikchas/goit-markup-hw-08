@@ -6,27 +6,31 @@
 
 .page-footer__container {
     display: flex;
-    text-align: center;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
+    
     
     @media screen and (min-width: 768px) {
         display: flex;
         align-items: baseline;
     }
 }
-
-
-
-.page-footer__adress {
-    display: flex;
-    justify-content: center;
-    font-style: normal;
+.page-footer__block {
+    
     text-align: center;
 }
 
+.page-footer__adress {
+    font-style: normal;
+}
+
 .page-footer__list {
-    margin-right: 70px;
+    
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+    }
 }
 
 .page-footer__item {
@@ -44,14 +48,8 @@
     line-height: 1.71;   
     color: var(--footer-contacts-color);
 }
-.footer-contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+
 .footer-contact__title {
-    display: flex;
-    justify-content: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -59,10 +57,6 @@
     text-transform: uppercase;
     color: var(--light-text-color);
     margin-bottom: 20px;
-
-    @media screen and (min-width: 768px) {
-        justify-content: start;
-    }
 }
 
 .footer-social__list {
@@ -79,19 +73,20 @@
 }
 
 .subscribe {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: auto;
+    
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
+    }
 }
 
 .subscribe__topic-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    @media screen and (min-width: 768px) {
+    display: block;
+    
+    
+    @media screen and (min-width: 1200px) {
+        display: flex;
         flex-direction: row;
+        align-items: center;
     }
 }
 
@@ -103,20 +98,30 @@
     outline: none;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
-    width: 100vh;
+    width: 100%;
     height: 50px;
     padding-left: 16px;
-    
-    @media screen and (min-width: 768px) {
-        width: 358px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 480px) {
+        width: 450px;
     }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+    }  
 }
 
 .subscribe__btn {
+    
     padding: 10px 28px;
-    margin-left: 12px;
+    
     width: 200px;
     height: 50px;
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 12px;
+    }
 }
 
 .subscribe__icon-send {

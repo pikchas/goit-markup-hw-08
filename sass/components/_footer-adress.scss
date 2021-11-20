@@ -2,7 +2,11 @@
     font-style: normal;
 }
 .page-footer__list {
-    margin-right: 70px;
+    
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+    }
 }
 .page-footer__item {
     margin-bottom: 9px;
