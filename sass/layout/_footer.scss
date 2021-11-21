@@ -14,11 +14,18 @@
     @media screen and (min-width: 768px) {
         display: flex;
         align-items: baseline;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 }
 .page-footer__block {
     
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+    }
 }
 
 .page-footer__adress {

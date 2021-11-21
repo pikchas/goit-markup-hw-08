@@ -546,6 +546,8 @@ textarea {
   .team-section__list {
     display: flex;
     flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
   }
 }
 
@@ -567,12 +569,12 @@ textarea {
 @media screen and (min-width: 768px) {
   .team-section__item {
     max-width: 354px;
-  }
-  .team-section__item:not(:nth-child(2n)) {
     margin-right: 30px;
+    margin-bottom: 30px;
+    flex-basis: calc((100%-60px)/2);
   }
-  .team-section__item:not(:last-child) {
-    margin-bottom: 0;
+  .team-section__item:nth-child(2n) {
+    margin-right: 0;
   }
 }
 
@@ -1443,6 +1445,8 @@ textarea {
   .team-section__list {
     display: flex;
     flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
   }
 }
 
@@ -1464,12 +1468,12 @@ textarea {
 @media screen and (min-width: 768px) {
   .team-section__item {
     max-width: 354px;
-  }
-  .team-section__item:not(:nth-child(2n)) {
     margin-right: 30px;
+    margin-bottom: 30px;
+    flex-basis: calc((100%-60px)/2);
   }
-  .team-section__item:not(:last-child) {
-    margin-bottom: 0;
+  .team-section__item:nth-child(2n) {
+    margin-right: 0;
   }
 }
 
@@ -1580,8 +1584,8 @@ textarea {
 }
 
 @media screen and (min-width: 768px) {
-  .section-clients__item:not(:nth-child(3n)) {
-    margin-right: 30px;
+  .section-clients__item:nth-child(3) {
+    margin-right: 0;
   }
   .section-clients__item:not(:nth-child(n+4)) {
     margin-bottom: 30px;
@@ -1589,6 +1593,7 @@ textarea {
 }
 
 .section-clients__link {
+  margin-right: 0;
   width: 210px;
   height: 92px;
   border: 1px solid #AFB1B8;
@@ -1649,11 +1654,20 @@ textarea {
   .page-footer__container {
     display: flex;
     align-items: baseline;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 
 .page-footer__block {
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer__block {
+    justify-content: center;
+  }
 }
 
 .page-footer__adress {

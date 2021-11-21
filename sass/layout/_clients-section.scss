@@ -2,6 +2,9 @@
     display: flex;
     // justify-content: space-between;
     flex-wrap: wrap;
+    
+    // margin-top: -30px;
+    // margin-left: -30px;
 }
 .section-clients__item {
     
@@ -25,8 +28,13 @@
     }
 
     @media screen and (min-width: 768px) {
-        &:not(:nth-child(3n)) {
-            margin-right: 30px;
+        
+        // margin-top: 30px;
+        // margin-left: 30px;
+        // flex-basis: calc((100%-90px)/3);
+
+        &:nth-child(3) {
+            margin-right: 0;
         }
 
         &:not(:nth-child(n+4)) {
@@ -35,7 +43,7 @@
     }
 }
 .section-clients__link {
-    
+    margin-right: 0;
     width: 210px;
     height: 92px;
     border: 1px solid #AFB1B8;
