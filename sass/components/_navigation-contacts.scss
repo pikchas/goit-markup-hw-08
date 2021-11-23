@@ -7,11 +7,20 @@
         display: block;
     
     }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;    
+    }
 }
 
 
 .nav-contacts__item:not(:last-child) {
     margin-bottom: 10px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+        margin-right: 30px;    
+    }
 }
 
 .nav-contacts__link {
@@ -19,7 +28,7 @@
     align-items: center;    
     font-weight: 500;
     font-size: 12px;
-  line-height: 1.17;
+    line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--second-text-color);
     transition-property: color;

@@ -23,7 +23,7 @@
     margin-top: 12px;
 
     @media screen and (min-width: 1200px) {
-        
+        width: 100%;
     }
 }
 .form__group {
@@ -116,7 +116,11 @@ textarea {
     line-height: 1.17;
     color: var(--second-text-color);
 
-    
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71; 
+           
+    }
 }
 .form__checkbox-input {
     -webkit-appearance: none;
@@ -150,6 +154,12 @@ textarea {
     font-size: 12px;
     line-height: 1.17;
     color: var(--accent-color);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71; 
+           
+    }
 }
 
 .btn--modal {  

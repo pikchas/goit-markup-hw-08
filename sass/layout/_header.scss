@@ -18,6 +18,11 @@
     padding-top: 21px;
     padding-bottom: 21px;
   }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;          
+  }
 }
 
 .nav-container {
@@ -124,7 +129,8 @@
 
 .header-nav__link--current {
   position: relative;
-
+  color: var(--accent-color);
+  
   &::after {
     display: block;
     position: absolute;
@@ -138,9 +144,7 @@
   }
 }
 
-// .header-nav__list.header-nav__item:not(:last-child) {
-//   margin-right: 50px;
-// }
+
 
 .nav-contacts {
   display: none;
@@ -151,10 +155,19 @@
     display: block;
         
   }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;    
+  }
 }
 
 .nav-contacts__item:not(:last-child) {
     margin-bottom: 10px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+        margin-right: 30px;    
+    }
 }
 
 .nav-contacts__link {

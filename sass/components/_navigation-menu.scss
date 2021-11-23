@@ -48,7 +48,8 @@
 
 .header-nav__link--current {
     position: relative;
-
+    color: var(--accent-color);
+    
     &::after {
         display: block;
         position: absolute;
@@ -62,6 +63,3 @@
     }
 }
 
-// .header-nav__list.header-nav__item:not(:last-child) {
-//     margin-right: 50px;
-// }
