@@ -144,16 +144,38 @@
     <div class="container no-padding">
         <h2 class="galary__title title-two">Чем мы занимаемся</h2>
         <ul class="galary__list list">
-            <li class="galary__item">                
-                <img class="galary__photo" src="./images/written-code.jpg" alt="Написание-кода" width="370">
+            <li class="galary__item"> 
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="./images/occupation/occ-1-desktop.webp 1x, ./images/occupation/occ-1-desktop@2x.webp 2x">
+
+                    <source media="(min-width: 1200px)" srcset="./images/occupation/occ-1-desktop.jpg 1x, ./images/occupation/occ-1-desktop@2x.jpg 2x">
+
+                    <img class="galary__photo" src="#" alt="Написание-кода" width="370">
+                </picture>               
                 <p class="galary__about">Десктопные приложения</p>
             </li>
-            <li class="galary__item">                
-                <img class="galary__photo" src="./images/adaptation-for-mobile.jpg" alt="Адаптация-под-мобильные-устройства" width="370">
+            <li class="galary__item">
+                <picture>
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/occupation/occ-2-desktop.webp 1x, ./images/occupation/occ-2-desktop@2x.webp 2x">
+                
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/occupation/occ-2-desktop.jpg 1x, ./images/occupation/occ-2-desktop@2x.jpg 2x">
+                
+                    <img class="galary__photo" src="#" alt="Адаптация-под-мобильные-устройства" width="370">
+                </picture>                
                 <p class="galary__about">Мобильные приложения</p>                                
             </li>
-            <li class="galary__item">                
-                <img class="galary__photo" src="./images/style.jpg" alt="Стилизация-сайта" width="370">
+            <li class="galary__item">
+                <picture>
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/occupation/occ-3-desktop.webp 1x, ./images/occupation/occ-3-desktop@2x.webp 2x">
+                
+                    <source media="(min-width: 1200px)"
+                        srcset="./images/occupation/occ-3-desktop.jpg 1x, ./images/occupation/occ-3-desktop@2x.jpg 2x">
+                
+                    <img class="galary__photo" src="#" alt="Стилизация-сайта" width="370">
+                </picture>
                 <p class="galary__about">Дизайнерские решения</p>                                
             </li>
         </ul>
@@ -181,7 +203,7 @@
                             type="image/webp">
                         <source media="(min-width: 1200px)" srcset="./images/team/desktop/team1.jpg 1x, ./images/team/desktop/team1@2x.jpg 2x">
                     
-                        <img src="#" alt="Игорь Демьяненко Product Designer" />
+                        <img class="team-section__foto-box" src="#" alt="Игорь Демьяненко Product Designer" />
                     </picture>
                     
                 </div>
@@ -237,7 +259,7 @@
                         <source media="(min-width: 1200px)"
                             srcset="./images/team/desktop/team2.jpg 1x, ./images/team/desktop/team2@2x.jpg 2x">
                     
-                        <img src="#" alt="Ольга Репина Frontend Developer" />
+                        <img class="team-section__foto-box" src="#" alt="Ольга Репина Frontend Developer" />
                     </picture>
                 </div>
                 
@@ -280,7 +302,7 @@
                     
                         <source media="(max-width: 767px)"
                             srcset="./images/team/mobile/team3.webp 1x, ./images/team/mobile/team3@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" srcset="./images/team/mobile/team2.jpg 1x, ./images/team/mobile/team3@2x.jpg 2x">
+                        <source media="(max-width: 767px)" srcset="./images/team/mobile/team3.jpg 1x, ./images/team/mobile/team3@2x.jpg 2x">
                     
                         <source media="(max-width: 1199px)"
                             srcset="./images/team/tablet/team3.webp 1x, ./images/team/tablet/team3@2x.webp 2x" type="image/webp">
@@ -292,7 +314,7 @@
                         <source media="(min-width: 1200px)"
                             srcset="./images/team/desktop/team3.jpg 1x, ./images/team/desktop/team3@2x.jpg 2x">
                     
-                        <img src="#" alt="Николай Тарасов Marketing" />
+                        <img class="team-section__foto-box" src="#" alt="Николай Тарасов Marketing" />
                     </picture>
                 </div>
                 
@@ -335,8 +357,8 @@
                     <picture>
                     
                         <source media="(max-width: 767px)"
-                            srcset="./images/team/mobile/team4.webp 1x, ./images/team/mobile/team3@2x.webp 2x" type="image/webp">
-                        <source media="(max-width: 767px)" srcset="./images/team/mobile/team2.jpg 1x, ./images/team/mobile/team4@2x.jpg 2x">
+                            srcset="./images/team/mobile/team4.webp 1x, ./images/team/mobile/team4@2x.webp 2x" type="image/webp">
+                        <source media="(max-width: 767px)" srcset="./images/team/mobile/team4.jpg 1x, ./images/team/mobile/team4@2x.jpg 2x">
                     
                         <source media="(max-width: 1199px)"
                             srcset="./images/team/tablet/team4.webp 1x, ./images/team/tablet/team4@2x.webp 2x" type="image/webp">
@@ -348,7 +370,7 @@
                         <source media="(min-width: 1200px)"
                             srcset="./images/team/desktop/team4.jpg 1x, ./images/team/desktop/team4@2x.jpg 2x">
                     
-                        <img src="#" alt="Михаил Ермаков UI Designer" />
+                        <img class="team-section__foto-box" src="#" alt="Михаил Ермаков UI Designer" />
                     </picture>
                 </div>
                 

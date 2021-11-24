@@ -55,9 +55,14 @@
     // width: 450px;
     // height: 460px;
     margin-bottom: 30px;
+    min-width: 273px;
+    
+    @media screen and (max-width: 479px) {
+      max-width: 450px;
+    }
 
     @media screen and (min-width: 480px) {
-      width: 450px;
+      max-width: 450px;
       
     }
 
@@ -69,7 +74,7 @@
       max-width: 270px;    
     }
 }
-.team-section__foto-box {
+.thumb.team-section__foto-box {
     display: block;
     width: 100%;
     
